@@ -1,0 +1,44 @@
+@media (min-width: 800px) {
+  .wrapper__share {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    width: 750px;
+    height: 280px;
+  }
+
+  .wrapper__image-head {
+    height: 100%;
+    width: 700px;
+  }
+
+  .image__head {
+    width: auto;
+    /* max-width: auto; */
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
+  }
+
+  .wrapper__text-section {
+    padding: revert;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-inline: 46px;
+    padding-block: 36px;
+  }
+
+  .text__title,
+  .text__main,
+  .wrapper__avatar-section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .text__title {
+    font-size: calc(20rem / 16);
+  }
+}

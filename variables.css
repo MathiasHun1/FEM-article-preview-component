@@ -1,0 +1,13 @@
+:root {
+  --clr-VD__GB: hsl(217, 19%, 35%);
+  --clr-DD__B: hsl(214, 17%, 51%);
+  --clr-GB: hsl(212, 23%, 69%);
+  --clr-L__GB: hsl(210, 46%, 95%);
+
+  --ff: 'Manrope', sans-serif;
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+
+  --tablet: 800;
+}

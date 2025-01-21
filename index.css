@@ -1,0 +1,151 @@
+html,
+body {
+  height: 100%;
+}
+
+/* utilities */
+
+.small-text {
+  font-size: calc(13rem / 16);
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.bright {
+  background-color: var(--clr-L__GB);
+}
+
+.dark {
+  background-color: var(--clr-DD__B);
+}
+
+/* styles */
+.wrapper {
+  min-height: 100%;
+  font-family: var(--ff);
+  padding-inline: 24px;
+  background-color: var(--clr-L__GB);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: clamp(280px, 100%, 350px);
+  max-width: 750px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wrapper__image-head {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image__head {
+  width: 100%;
+}
+
+.wrapper__text-section {
+  background-color: white;
+  padding-inline: 38px;
+  padding-top: 36px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.text__title {
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: var(--fw-bold);
+  color: var(--clr-VD__GB);
+  margin-bottom: 16px;
+}
+
+.text__main {
+  color: var(--clr-DD__B);
+  margin-bottom: 16px;
+}
+
+.wrapper__avatar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 18px;
+}
+
+.wrapper__avatar-data {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wrapper__image__avatar {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text__profile-name {
+  font-size: calc(13rem / 16);
+  color: var(--clr-VD__GB);
+}
+
+.text__profile-date {
+  color: var(--clr-GB);
+}
+
+.wrapper__image__arrow {
+  width: 32px;
+  height: 32px;
+  right: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.wrapper__share {
+  background-color: var(--clr-VD__GB);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 18px;
+  padding-inline: 38px;
+  transition: transform 100ms;
+}
+
+.text__share {
+  margin-right: 20px;
+  letter-spacing: 5px;
+  color: var(--clr-GB);
+}
+
+.icons-component {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wrapper__image__arrow {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.reverse-color {
+  color: red;
+}
+
+.transformed {
+  transform: translateY(100%);
+}
+
+/* @media (min-width: 800px) {
+  .wrapper {
+    background-color: red;
+  }
+} */
