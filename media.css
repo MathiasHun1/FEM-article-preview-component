@@ -7,11 +7,14 @@
     display: flex;
     width: 750px;
     height: 280px;
+    overflow: visible;
   }
 
   .wrapper__image-head {
     height: 100%;
     width: 700px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .image__head {
