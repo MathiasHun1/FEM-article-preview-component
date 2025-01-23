@@ -3,7 +3,9 @@ const textSection = document.querySelector('.wrapper__text-section');
 const shareContainer = document.querySelector('.wrapper__share');
 const activateShare = document.getElementById('share-activate');
 const closeShare = document.getElementById('share-close');
-const desktopShareContainer = document.querySelector('.wrapper__share-desktop');
+const desktopShareContainer = document.querySelector('.share-popup');
+
+console.dir(desktopShareContainer);
 
 //utiltity functions
 const hideElement = (element) => {
@@ -30,12 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 //register evenet listeners for showing/hiding the share-menu
 activateShare.addEventListener('click', () => {
   toggleElement(shareContainer, 'transformed-translate');
-  toggleElement(desktopShareContainer, 'transformed-scale');
+  toggleElement(desktopShareContainer.firstElementChild, 'transformed-scale');
 });
 
 closeShare.addEventListener('click', () => {
   toggleElement(shareContainer, 'transformed-translate');
-  toggleElement(desktopShareContainer, 'transformed-scale');
+  toggleElement(desktopShareContainer.firstElementChild, 'transformed-scale');
 });
 
 // hide or show 'hidden' elements based on screen size
