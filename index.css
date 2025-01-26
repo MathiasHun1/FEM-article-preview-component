@@ -3,34 +3,6 @@ body {
   height: 100%;
 }
 
-/* utilities */
-
-.small-text {
-  font-size: calc(13rem / 16);
-  line-height: 20px;
-  letter-spacing: 0.12px;
-}
-
-.bright {
-  background-color: var(--clr-L__GB);
-}
-
-.dark {
-  background-color: var(--clr-DD__B);
-}
-
-.hidden {
-  display: none !important;
-}
-
-.transformed-translate {
-  transform: translateY(100%) !important;
-}
-
-.transformed-scale {
-  transform: scale(0%) !important;
-}
-
 /* styles */
 .wrapper {
   min-height: 100%;
@@ -203,4 +175,32 @@ body {
 
 .icon {
   width: 20px;
+}
+
+/* utilities */
+
+.small-text {
+  font-size: calc(13rem / 16);
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.bright {
+  background-color: var(--clr-L__GB);
+}
+
+.dark {
+  background-color: var(--clr-DD__B);
+}
+
+.hidden {
+  display: none;
+}
+
+.transformed-translate {
+  transform: translateY(100%);
+}
+
+.transformed-scale {
+  transform: scale(0%);
 }
